@@ -1,0 +1,414 @@
+@import "../scss-variables/variables.scss";
+
+.search-box {
+    padding: 2.7rem;
+    border: 1px solid #000;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $PRIMARY_WHITE;
+    overflow: auto;
+}
+.search-form {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.search-fields {
+    height: 100%;
+}
+.search-text {
+    margin: 0;
+}
+.hi {
+    padding: 10px;
+}
+.dropdown {
+    border: 1px solid #ccc;
+    background-color: $PRIMARY_WHITE;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>'); /* Specify the SVG code for the arrow */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center; /* Shift the arrow 10px to the left */
+    background-size: 15px; /* Adjust the size of the arrow */
+    border-radius: 5px;
+    width: 100%;
+    // min-height: 4.2%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-style: italic;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+.dropdown-item {
+    color: $PRIMARY_GRAY;
+}
+.dropdown-heading {
+    min-width: 100%;
+    // margin-bottom: 5px;
+    font-size: 100%;
+    padding-top: 1px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.dropdown-guest {
+    border: 1px solid #ccc;
+    background-color: $PRIMARY_WHITE;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>'); /* Specify the SVG code for the arrow */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center; /* Shift the arrow 10px to the left */
+    background-size: 1rem; /* Adjust the size of the arrow */
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-style: italic;
+    font-size: 100%;
+    padding: 1rem;
+}
+.guest-feature {
+    flex-grow: 2;
+}
+.dropdown-heading-guest {
+    width: 100%;
+
+    margin-bottom: 5px;
+    font-size: 100%;
+    padding-top: 1px;
+    font-weight: 400;
+}
+.dropdown-room {
+    border: 1px solid #ccc;
+    background-color: $PRIMARY_WHITE;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>'); /* Specify the SVG code for the arrow */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center; /* Shift the arrow 10px to the left */
+    background-size: 15px; /* Adjust the size of the arrow */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 77px;
+    min-height: 48px;
+    height: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: black;
+    font-style: italic;
+    font-size: 100%;
+    padding: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.roomOption {
+    color: $PRIMARY_GRAY;
+}
+.dropdown-heading-room {
+    width: 100%;
+    // margin-bottom: 5px;
+    font-size: 100%;
+    padding-top: 1px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.guest-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    width: 95%;
+    max-width: 292px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.room-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.accessible {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    font-size: 80%;
+}
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
+.button-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-btn {
+    width: 140px;
+    height: 44px;
+    background-color: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.guests-dropdown {
+    padding: 17px;
+    border: 1px solid $PRIMARY_GRAY;
+    border-radius: 3px;
+    position: absolute;
+    background: $PRIMARY_WHITE;
+    width: 100%;
+    max-width: 290px;
+}
+.guest-counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.count-btn {
+    background-color: $PRIMARY_WHITE;
+    border: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.count-title {
+    font-size: 100%;
+    font-weight: 700;
+}
+.count-desc {
+    font-size: 100%;
+    font-weight: 400;
+}
+.counter-text {
+    font-size: 100%;
+    font-weight: 400;
+}
+.counter-section {
+    display: flex;
+    align-items: center;
+}
+.calendar {
+    border-radius: 5px;
+    position: absolute;
+    background: $PRIMARY_WHITE;
+    width: 50%;
+    z-index: 1;
+}
+.calendar-top {
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.tile-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.calendar-footer {
+    height: 10px;
+}
+.dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c1c2c2;
+    width: 100%;
+    height: 48px;
+    padding: 12px;
+    background-color: transparent;
+}
+
+.label-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 1rem;
+    display: flex;
+    align-items: center;
+}
+.calendar-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $PRIMARY_WHITE;
+    z-index: 1;
+}
+
+.apply-dates {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.apply-dates__button {
+    width: 20%;
+    height: 3rem;
+    background-color: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.react-calendar {
+    width: 100%;
+}
+.react-calendar__viewContainer {
+    gap: 1rem;
+}
+
+.react-calendar__tile {
+    height: 3rem;
+}
+.react-calendar__tile--active {
+    background-color: $PRIMARY_GRAY;
+    color: #000;
+}
+.react-calendar__tile--hasActive:enabled:focus {
+    background: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+}
+.react-calendar__tile--hasActive {
+    background: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+}
+.react-calendar__month-view__days__day--weekend {
+    color: #000;
+}
+.react-calendar__tile--now {
+    background: $PRIMARY_WHITE;
+}
+.react-calendar__tile--rangeStart {
+    background-color: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+}
+.react-calendar__tile--rangeEnd {
+    background-color: $PRIMARY_BLUE;
+    color: $PRIMARY_WHITE;
+}
+.react-calendar__navigation__next2-button {
+    display: none;
+}
+.react-calendar__navigation__prev2-button {
+    display: none;
+}
+.react-calendar__navigation__label {
+    font-size: 100%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.react-calendar__navigation__label__divider {
+    display: none;
+}
+.react-calendar__month-view__weekdays__weekday {
+    font-size: 100%;
+    color: #858685;
+    abbr {
+        text-decoration: none;
+    }
+}
+
+.date-text {
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    font-weight: 400;
+}
+.error {
+    color: red;
+}
+
+.chair-feature {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0rem;
+}
+
+@media screen and (max-width: 700px) {
+    .search-box {
+        padding: 1.5rem;
+        width: 80%;
+        height: 60%;
+    }
+    .react-calendar--doubleView .react-calendar__viewContainer {
+        display: flex;
+        margin: -0.5em;
+        flex-direction: column;
+    }
+    .react-calendar--doubleView .react-calendar__viewContainer > * {
+        width: 100%;
+    }
+    .react-calendar__navigation__label {
+        font-size: 50%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .calendar-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 47.7rem;
+        width: auto;
+        background-color: $PRIMARY_WHITE;
+        z-index: 1;
+    }
+    .react-calendar,
+    .react-calendar *,
+    .react-calendar *:before,
+    .react-calendar *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1106px) and (min-width: 700px) {
+    .search-box {
+        padding: 1.5rem;
+        width: 80%;
+        height: 80%;
+    }
+    .calendar-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 47.7rem;
+        width: auto;
+        background-color: $PRIMARY_WHITE;
+        z-index: 1;
+    }
+    .calendar {
+        margin-right: 5rem;
+        z-index: 1;
+    }
+}
